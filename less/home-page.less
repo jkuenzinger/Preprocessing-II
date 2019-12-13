@@ -1,61 +1,129 @@
+ 
+  .heading{
+    display:flex;
+    flex-wrap:wrap;
+    width:45%;
+    margin-left:27.5%;
+    margin-right:27.5%;
+    padding-bottom:1%;
+    border-bottom: 1px dashed grey;
+    @media ( max-width: 500px ){
+      flex-direction:column;
+      align-items:left;
+      flex-wrap:wrap;
+      width:90%;
+      margin-left:5%;
+      margin-right:5%;
+    }
+  
+  h2{
+      padding-top:2%;
+   }
+  }
+ 
 .home {
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
-    .text-content {
+    @media ( max-width: 500px ){
+      flex-direction:column;
+      align-items:center;
+      flex-wrap:wrap;
+      width:90%;
+      margin-left:5%;
+      margin-right:5%;
+    }
+  
+.text-content {
       width: 48%;
       padding-right: 1%;
-    }
+      @media ( max-width: 500px ){
+        width:100%;
+        align-items:left;
+      }
+     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media ( max-width: 500px ){
+        width:100%;
+        align-items:left;
+     
+      }
+    }
 
       img {
         border-radius: 10px;
-      }
-    }
-  }
-
-  .inverse-content {
+      } 
+}
+  
+.inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
+    border-bottom: 2px dashed;
+    @media ( max-width: 500px ){
+      flex-direction:column;
+      flex-wrap:wrap;
+     }
+}
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+    @media ( max-width: 500px ){
+        width:100%;
+        align-items:left;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media ( max-width: 500px ){
+        width:100%;
+
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
-    img {
+    @media ( max-width: 500px ){
+      width:90%;
+    }
+  }  
+  img {
       border-radius: 10px;
     }
-  }
+   
 
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
-    .destination {
+    @media ( max-width: 500px ){
+      flex-direction:column;
+      align-items:left;
+      width:90%;
+      margin-right:5%;
+      margin-left:5%;
+     }
+    }
+  .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media ( max-width: 500px ){
+        width: 90%;
+        margin-right:5%;
+        margin-left:5%;
     }
-  }
-}// home
+  } 
+
+// home
+
+.btn{
+  .signmeupbutton(@bg-colour:#007F80, @width:100%,@font-colour: white);
+}
