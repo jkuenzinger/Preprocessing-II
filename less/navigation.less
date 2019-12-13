@@ -1,45 +1,40 @@
 // Navigation Styles here
 
-
-
-
-.funnavcontainer{
+h1{
     display:flex;
-    flex-wrap:wrap;
-    justify-content:space-evenly;
-    align-items:center;
-    width:55%;
-    padding-top:1.5%;
-    margin-right:22.5%;
-    margin-left:22.5%;
+    width:15%;
+    margin-left:28%;
+    padding-top:10px;
+ @media ( max-width: 500px ){
+        padding-left:13%;
+        padding-bottom:30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+.topnavcontainer{
+    display:flex;
+    flex-direction:row;
+    padding-left:54%;
+    margin-top:-25px;
+    padding-bottom:5px;
     @media ( max-width: 500px ){
         width:100%;
-        padding-bottom:20%;
-        padding-left:40%;
+        padding-left:60px;
     }
+a{
+    font-size:2rem;
+    padding:12px;
+    justify-content:space-evenly;
+    @media ( max-width: 500px ){
+    font-size:2rem;
+    justify-content:space-evenly;
+    padding:12px;
         
-   h1{
-        @media ( max-width: 500px ){
-            display:flex;
-            justify-content:center;
-
-          
-        }
-    a{
-       align-items:right;
-       font-size: 2rem;
-       padding-left:1.5%px;
-      @media ( max-width: 500px ){
-           display:flex;
-           justify-content:space-evenly;
-           
-       }
-
-    }
-  }
-
-
-hr{
-     border-bottom:1px dashed grey;
- }
+   }
 }
+}
+
+
